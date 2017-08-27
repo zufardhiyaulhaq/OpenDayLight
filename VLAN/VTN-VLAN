@@ -135,3 +135,47 @@ http://10.0.0.2:8181/restconf/operations/vtn-port-map:set-port-map
         "port-name": "eth3"
     }
 }
+
+{
+    "input": {
+        "tenant-name": "vtn1",
+        "bridge-name": "vbr2",
+        "interface-name": "vlan1001",
+        "node": "openflow:46699145609548",
+        "port-id": "5",
+        "port-name": "eth10"
+    }
+}
+
+{
+    "input": {
+        "tenant-name": "vtn1",
+        "bridge-name": "vbr2",
+        "interface-name": "vlan1002",
+        "node": "openflow:245146792133184",
+        "port-id": "5",
+        "port-name": "eth10"
+    }
+}
+
+{
+    "input": {
+        "tenant-name": "vtn1",
+        "bridge-name": "vbr3",
+        "interface-name": "vlan10001",
+        "node": "openflow:46699145609548",
+        "port-id": "3",
+        "port-name": "eth2"
+    }
+}
+
+{
+    "input": {
+        "tenant-name": "vtn1",
+        "bridge-name": "vbr3",
+        "interface-name": "vlan10002",
+        "node": "openflow:245146792133184",
+        "port-id": "3",
+        "port-name": "eth2"
+    }
+}
