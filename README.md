@@ -3,7 +3,9 @@ OpenDayLight
 
 OpenDayLight adalah sebuah perangkat lunak sumber terbuka yang berfungsi sebagai controller SDN (Software Defined Network).
 
-OpenDayLight mendukung protokol SDN OpenFlow dan juga protokol SDN terbuka yang lain. 
+OpenDayLight mendukung protokol SDN OpenFlow dan juga protokol SDN terbuka yang lain SEPERTI NetConf ataupun OSVDB.
+
+## Arsitektur OpenDayLight
 
 OpenDayLight Virtual Tenant Network
 ===================================
