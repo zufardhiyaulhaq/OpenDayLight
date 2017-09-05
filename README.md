@@ -6,6 +6,7 @@ OpenDayLight adalah sebuah perangkat lunak sumber terbuka yang berfungsi sebagai
 OpenDayLight mendukung protokol SDN OpenFlow dan juga protokol SDN terbuka yang lain SEPERTI NetConf ataupun OSVDB.
 
 ## Arsitektur OpenDayLight
+![alt text](https://raw.githubusercontent.com/zufardhiyaulhaq/OpenDayLight/master/Images/OpenDayLight%20Architecture.png)
 
 OpenDayLight Virtual Tenant Network
 ===================================
