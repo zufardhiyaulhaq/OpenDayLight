@@ -11,6 +11,12 @@ OpenDayLight mendukung protokol SDN OpenFlow dan juga protokol SDN terbuka yang 
 ## Tentang Repositori
 Repositori ini berisi tentang tutorial yang berkaitan dengan opendaylight.
 
+Pengenalan Software Defined Network
+===================================
+Software Defined Network atau yang biasa disingkat dengan SDN adalah suatu paradigma baru dalam dunia jaringan dimana secara garis besar dapat memisahkan control plane dan data plane.
+
+
+
 OpenDayLight Virtual Tenant Network
 ===================================
 
