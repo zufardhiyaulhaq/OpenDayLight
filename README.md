@@ -1,15 +1,29 @@
+Tentang Repositori
+==================
+
+Repositori ini berisi tentang tutorial yang berkaitan dengan opendaylight. Ada beberapa tutorial yang akan dibahas pada repositori ini.
+
+## Requirement
+- Lab akan menggunakan GNS3 dan Docker.
+- Minimal 8GB RAM
+
+## Daftar Isi
+1. Pengenalan Software Defined Network
+1. Pengenalan OpenDayLight
+1. Instalasi OpenDayLight
+1. OpenDayLight Clustering
+1. OpenDayLight Virtual Tenant Network
+
 OpenDayLight
 ============
 
 OpenDayLight adalah sebuah perangkat lunak sumber terbuka yang berfungsi sebagai controller SDN (Software Defined Network).
 
-OpenDayLight mendukung protokol SDN OpenFlow dan juga protokol SDN terbuka yang lain SEPERTI NetConf ataupun OSVDB.
+OpenDayLight mendukung protokol SDN OpenFlow dan juga protokol SDN terbuka yang lain seperti NetConf ataupun OSVDB.
 
 ## Arsitektur OpenDayLight
 ![alt text](https://raw.githubusercontent.com/zufardhiyaulhaq/OpenDayLight/master/Images/OpenDayLight%20Architecture.png)
 
-## Tentang Repositori
-Repositori ini berisi tentang tutorial yang berkaitan dengan opendaylight.
 
 Pengenalan Software Defined Network
 ===================================
