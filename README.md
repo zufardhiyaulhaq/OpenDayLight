@@ -8,6 +8,9 @@ OpenDayLight mendukung protokol SDN OpenFlow dan juga protokol SDN terbuka yang 
 ## Arsitektur OpenDayLight
 ![alt text](https://raw.githubusercontent.com/zufardhiyaulhaq/OpenDayLight/master/Images/OpenDayLight%20Architecture.png)
 
+## Tentang Repositori
+Repositori ini berisi tentang tutorial yang berkaitan dengan opendaylight.
+
 OpenDayLight Virtual Tenant Network
 ===================================
 
