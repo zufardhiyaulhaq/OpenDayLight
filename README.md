@@ -47,7 +47,20 @@ Direkomendasikan untuk menginstall OpenDayLight di ubuntu karena tutorial instal
 
 Tutorial ini tidak berkaitan dengan tutorial yang lain, karena kita akan menggunakan OpenDayLight base on Docker. Tetapi kemampuan instalasi OpenDayLight harus dibutuhkan untuk implementasi di dunia nyata.
 
-
+## Panduan Instalasi
+- Install Ubuntu
+- Install unzip dan Wget
+```
+sudo apt-get install unzip wget
+```
+- Unduh OpenDayLight
+```
+wget https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/integration/distribution-karaf/0.5.4-Boron-SR4/distribution-karaf-0.5.4-Boron-SR4.zip
+```
+- Unzip OpenDayLight
+```
+unzip distribution-karaf-0.5.4-Boron-SR4.zip
+```
 OpenDayLight Virtual Tenant Network
 ===================================
 Virtual Tenant Network (VTN) adalah sebuah paradigma dimana kita dapat mendesain sebuah jaringan virtual  
