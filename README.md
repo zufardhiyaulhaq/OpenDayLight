@@ -91,6 +91,7 @@ feature:install odl-dlux-all
 ```
 http://<your-opendaylight-ip>:8181/index.html
 ```
+- Login dengan username : admin dan password : admin
 
 OpenDayLight Virtual Tenant Network
 ===================================
