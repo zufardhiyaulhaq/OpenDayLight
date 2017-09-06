@@ -93,6 +93,8 @@ http://<your-opendaylight-ip>:8181/index.html
 ```
 - Login dengan username : admin dan password : admin
 
+![alt text](https://raw.githubusercontent.com/zufardhiyaulhaq/OpenDayLight/master/Images/odl-dlux.png)
+
 OpenDayLight Virtual Tenant Network
 ===================================
 Virtual Tenant Network (VTN) adalah sebuah paradigma dimana kita dapat mendesain sebuah jaringan virtual  
