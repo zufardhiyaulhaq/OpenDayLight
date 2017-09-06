@@ -12,8 +12,10 @@ Repositori ini berisi tentang tutorial yang berkaitan dengan opendaylight. Ada b
 1. Pengenalan OpenDayLight
 1. Instalasi OpenDayLight
 1. Instalasi OpenVSwitch
+1. Instalasi Docker
 1. OpenDayLight Clustering
 1. OpenDayLight Virtual Tenant Network
+
 
 ## File yang diperlukan
 - [GNS3](https://gns3.com/)
@@ -102,6 +104,22 @@ Tutorial ini tidak berkaitan dengan tutorial yang lain, karena kita akan menggun
 Silahkan lihat repositori saya yang lain untuk instalasi OpenVSwitch.
 
 - [OpenVSwitch](https://github.com/zufardhiyaulhaq/OpenVSwitch)
+
+Instalasi Docker
+================
+
+## Pengenalan Docker
+Docker adalah sebuah teknologi dimana sebuah aplikasi dapat berjalan didalam sebuah container. Container sendiri merupakan cara dimana aplikasi tersebut disimpan dan diikatkan dengan librarynya sehingga dapat berjalan dengan sempurna.
+
+Perbedaan mendasar antara konsep container dengan virtual machine adalah didalam container, kita tidak perlu menginstall seluruh sistem operasi seperti virtual machine.
+
+## Catatan Instalasi
+- Docker pada repositori ini berguna untuk menyimpan container OpenVSwitch dan juga OpenDayLight sehingga tidak perlu menginstallnya didalam sebuah virtual machine. Dimana docker akan dikombinasikan dengan GNS3 sehingga container dapat dimasukan secara langsung kedalam Lab di GNS3.
+- Kita akan menginstall docker pada Host OS sehingga tidak diperlukan sebuah GNS3 VM.
+
+## Instalasi
+
+
 
 OpenDayLight Virtual Tenant Network
 ===================================
