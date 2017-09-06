@@ -53,6 +53,18 @@ Tutorial ini tidak berkaitan dengan tutorial yang lain, karena kita akan menggun
 ```
 sudo apt-get install unzip wget
 ```
+- Install Java
+
+```
+sudo apt-get install default-jre-headless
+nano ~/.bashrc
+ 
+tambahkan didalam bashrc
+export JAVA_HOME=/usr/lib/jvm/default-java
+
+jalankan 
+source ~/.bashrc
+```
 - Unduh OpenDayLight
 ```
 wget https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/integration/distribution-karaf/0.5.4-Boron-SR4/distribution-karaf-0.5.4-Boron-SR4.zip
