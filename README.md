@@ -95,6 +95,14 @@ http://<your-opendaylight-ip>:8181/index.html
 
 ![alt text](https://raw.githubusercontent.com/zufardhiyaulhaq/OpenDayLight/master/Images/odl-dlux.png)
 
+Instalasi OpenVSwitch
+=====================
+Tutorial ini tidak berkaitan dengan tutorial yang lain, karena kita akan menggunakan OpenVSwitch base on Docker. Tetapi kemampuan instalasi OpenVSwitch harus dibutuhkan untuk implementasi di dunia nyata.
+
+Silahkan lihat repositori saya yang lain untuk instalasi OpenVSwitch.
+
+- [OpenVSwitch](https://github.com/zufardhiyaulhaq/OpenVSwitch)
+
 OpenDayLight Virtual Tenant Network
 ===================================
 Virtual Tenant Network (VTN) adalah sebuah paradigma dimana kita dapat mendesain sebuah jaringan virtual  
