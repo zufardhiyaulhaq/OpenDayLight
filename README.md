@@ -73,6 +73,25 @@ wget https://nexus.opendaylight.org/content/repositories/public/org/opendaylight
 ```
 unzip distribution-karaf-0.5.4-Boron-SR4.zip
 ```
+- Jalankan OpenDayLight
+```
+cd distribution-karaf-0.5.4-Boron-SR4
+./bin/karaf
+```
+- Install Feature DLUX
+
+DLUX atau OpenDayLight User Interface adalah salah satu fitur penting dimana menyediakan interface atau antarmuka untuk mengkonfigurasi OpenDayLight
+
+Berikut dokumentasi terkait dengan [DLUX](http://docs.opendaylight.org/en/stable-carbon/getting-started-guide/common-features/dlux.html)
+```
+feature:install odl-dlux-all
+```
+- Buka OpenDayLight dengan Browser
+
+```
+http://<your-opendaylight-ip>:8181/index.html
+```
+
 OpenDayLight Virtual Tenant Network
 ===================================
 Virtual Tenant Network (VTN) adalah sebuah paradigma dimana kita dapat mendesain sebuah jaringan virtual  
