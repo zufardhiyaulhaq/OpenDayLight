@@ -119,7 +119,44 @@ Perbedaan mendasar antara konsep container dengan virtual machine adalah didalam
 
 ## Instalasi
 
+### Set Up Repository
 
+- Install apt agar mengizinkan untuk menggunakan repositori melalui https
+
+```
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+```
+- Tambahkan Repository
+
+```
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+
+### instalasi Docker
+
+```
+$ sudo apt-get update
+$ sudo apt-get install docker-ce
+```
+
+### Pull Docker Images yang diperlukan
+Kita akan melakukan pull docker images OpenDayLight dan OpenVSwitch
+
+```
+$ docker pull zufardhiyaulhaq/opendaylight
+$ docker pull gns3/openvswitch
+```
+
+Sampai tahap ini, kita sudah siap untuk melakukan Lab OpenDayLight.
 
 OpenDayLight Virtual Tenant Network
 ===================================
