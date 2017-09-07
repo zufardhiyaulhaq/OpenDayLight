@@ -113,6 +113,8 @@ Docker adalah sebuah teknologi dimana sebuah aplikasi dapat berjalan didalam seb
 
 Perbedaan mendasar antara konsep container dengan virtual machine adalah didalam container, kita tidak perlu menginstall seluruh sistem operasi seperti virtual machine.
 
+![alt text](https://raw.githubusercontent.com/zufardhiyaulhaq/OpenDayLight/master/Images/docker-vm-container.png)
+
 ## Catatan Instalasi
 - Docker pada repositori ini berguna untuk menyimpan container OpenVSwitch dan juga OpenDayLight sehingga tidak perlu menginstallnya didalam sebuah virtual machine. Dimana docker akan dikombinasikan dengan GNS3 sehingga container dapat dimasukan secara langsung kedalam Lab di GNS3.
 - Kita akan menginstall docker pada Host OS sehingga tidak diperlukan sebuah GNS3 VM.
