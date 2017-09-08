@@ -13,6 +13,7 @@ Repositori ini berisi tentang tutorial yang berkaitan dengan opendaylight. Ada b
 1. Instalasi OpenDayLight
 1. Instalasi OpenVSwitch
 1. Instalasi Docker
+1. Menghubungkan OpenVSwitch ke OpenDayLight
 1. OpenDayLight Clustering
 1. OpenDayLight Virtual Tenant Network
 
@@ -159,6 +160,81 @@ $ docker pull gns3/openvswitch
 ```
 
 Sampai tahap ini, kita sudah siap untuk melakukan Lab OpenDayLight.
+
+Menghubungkan OpenVSwitch ke OpenDayLight
+=========================================
+
+Kasus ini hanyalah contoh bagaimana cara untuk menghubungkan OpenVSwitch ke OpenDayLight.
+
+## Topologi
+![alt text](https://github.com/zufardhiyaulhaq/OpenVSwitch/blob/master/Images/Topology.png)
+
+## Konfigurasi OpenVSWitch
+
+- Buat sebuah Bridge
+
+```
+$ ovs-vsctl add-br br0
+```
+
+- Masukan interface kedalam Bridge
+
+```
+$ ovs-vsctl add-port br0 eth0
+$ ovs-vsctl add-port br0 eth1
+$ ovs-vsctl add-port br0 eth2
+$ ovs-vsctl add-port br0 eth3
+```
+
+- Set Controller ke OpenDayLight
+
+```
+$ ovs-vsctl set-controller br0 "tcp:192.168.122.254:6633"
+```
+
+## Konfigurasi OpenDayLight
+
+- Jalankan OpenDayLight dengan Karaf
+
+```
+$ ./bin/karaf
+```
+
+- Install OpenDayLight DLUX dan L2Switch feature
+
+```
+feature:install odl-dlux-all odl-l2switch-all
+```
+
+## Verifikasi
+
+Lihat apakah OpenVSwitch terkoneksi dengan Controller
+```
+$ ovs-vsctl list controller
+_uuid               : dd619d79-33f8-4efb-89c6-bda14799b40e
+connection_mode     : []
+controller_burst_limit: []
+controller_rate_limit: []
+enable_async_messages: []
+external_ids        : {}
+inactivity_probe    : []
+is_connected        : true
+local_gateway       : []
+local_ip            : []
+local_netmask       : []
+max_backoff         : []
+other_config        : {}
+role                : master
+status              : {last_error="Connection refused", sec_since_connect="11", sec_since_disconnect="19", state=ACTIVE}
+target              : "tcp:192.168.122.254:6633"
+```
+
+## Troubleshooting
+- Jika OpenVSwitch dan OpenDayLight sudah terkoneksi tetapi tidak dapat terhubung ke controller, nyalakan interface bridge pada OpenVSwitch
+
+```
+$ ifconfig br0 up
+```
 
 OpenDayLight Virtual Tenant Network
 ===================================
