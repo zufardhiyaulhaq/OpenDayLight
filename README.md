@@ -244,7 +244,7 @@ NETCONF adalah protokol northbound pada SDN (Software Defined Network) yang berf
 Kita akan mensimulasikan NETCONF dengan sebuah NETCONF Testtool yang dibuat oleh OpenDayLight. Untuk versi perangkat aslinya, Masih dalam tahap riset.
 
 ## Topologi
-![alt text](https://github.com/zufardhiyaulhaq/OpenDayLight/blob/master/Images/NETCONF_Topology1.png)
+![alt text](https://github.com/zufardhiyaulhaq/OpenDayLight/blob/master/Images/NETCONF-Topology-1.png)
 
 ## Konfigurasi pada OpenDayLight
 
@@ -280,7 +280,27 @@ $ wget https://nexus.opendaylight.org/content/repositories/public/org/opendaylig
 java -jar netconf-testtool-1.1.4-Boron-SR4-executable.jar
 ```
 
-## Tambahkan Perangkat didalam OpenDayLight dengan Menggunakan Postman
+## Tambahkan Perangkat didalam OpenDayLight dengan Menggunakan RESTCONF
+
+Dengan menggunakan postman, akan lebih mudah memasukan perintah RESTCONF.
+- Type : PUT
+- URL : _http://192.168.122.254:8181/restconf/config/network-
+topology:network-topology/topology/topology-
+netconf/node/**new-netconf-device**_
+
+- Payload atau Body :
+
+```
+<node xmlns="urn:TBD:params:xml:ns:yang:network-topology">
+<node-id>**new-netconf-device**</node-id>
+<host xmlns="urn:opendaylight:netconf-node-topology">**192.168.122.2**</host>
+<port xmlns="urn:opendaylight:netconf-node-topology">17830</port>
+<username xmlns="urn:opendaylight:netconf-node-topology">admin</username>
+<password xmlns="urn:opendaylight:netconf-node-topology">admin</password>
+<tcp-only xmlns="urn:opendaylight:netconf-node-topology">false</tcp-only>
+</node>
+```
+
 
 OpenDayLight Virtual Tenant Network
 ===================================
