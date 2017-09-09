@@ -287,19 +287,18 @@ Dengan menggunakan postman, akan lebih mudah memasukan perintah RESTCONF.
 - URL : _http://192.168.122.254:8181/restconf/config/network-
 topology:network-topology/topology/topology-
 netconf/node/**new-netconf-device**_
-
 - Payload atau Body :
-
 ```
 <node xmlns="urn:TBD:params:xml:ns:yang:network-topology">
-<node-id>**new-netconf-device**</node-id>
-<host xmlns="urn:opendaylight:netconf-node-topology">**192.168.122.2**</host>
+<node-id>new-netconf-device</node-id>
+<host xmlns="urn:opendaylight:netconf-node-topology">192.168.122.2</host>
 <port xmlns="urn:opendaylight:netconf-node-topology">17830</port>
 <username xmlns="urn:opendaylight:netconf-node-topology">admin</username>
 <password xmlns="urn:opendaylight:netconf-node-topology">admin</password>
 <tcp-only xmlns="urn:opendaylight:netconf-node-topology">false</tcp-only>
 </node>
 ```
+
 
 
 OpenDayLight Virtual Tenant Network
