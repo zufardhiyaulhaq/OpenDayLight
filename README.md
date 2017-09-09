@@ -236,6 +236,17 @@ target              : "tcp:192.168.122.254:6633"
 $ ifconfig br0 up
 ```
 
+Menghubungkan perangkat ke OpenDayLight dengan NETCONF
+======================================================
+
+NETCONF adalah protokol northbound pada SDN (Software Defined Network) yang berfungsi sama seperti OpenFlow. 
+
+Kita akan mensimulasikan NETCONF dengan sebuah NETCONF Testtool yang dibuat oleh OpenDayLight. Untuk versi perangkat aslinya, Masih dalam tahap riset.
+
+## Topologi
+
+
+
 OpenDayLight Virtual Tenant Network
 ===================================
 Virtual Tenant Network (VTN) adalah sebuah paradigma dimana kita dapat mendesain sebuah jaringan virtual  
