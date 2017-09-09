@@ -299,7 +299,7 @@ netconf/node/**new-netconf-device**_
 </node>
 ```
 
-
+![alt text](https://github.com/zufardhiyaulhaq/OpenDayLight/blob/master/Images/NETCONF-Postman-1.png)
 
 OpenDayLight Virtual Tenant Network
 ===================================
