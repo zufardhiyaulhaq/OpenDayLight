@@ -13,10 +13,10 @@ Repositori ini berisi tentang tutorial yang berkaitan dengan opendaylight. Ada b
 1. Instalasi OpenDayLight
 1. Instalasi OpenVSwitch
 1. Instalasi Docker
-1. Menghubungkan OpenVSwitch ke OpenDayLight
+1. Menghubungkan OpenVSwitch ke OpenDayLight (OpenFlow)
+1. Menghubungkan perangkat ke OpenDayLight dengan NETCONF
 1. OpenDayLight Clustering
 1. OpenDayLight Virtual Tenant Network
-
 
 ## File yang diperlukan
 - [GNS3](https://gns3.com/)
