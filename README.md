@@ -244,8 +244,43 @@ NETCONF adalah protokol northbound pada SDN (Software Defined Network) yang berf
 Kita akan mensimulasikan NETCONF dengan sebuah NETCONF Testtool yang dibuat oleh OpenDayLight. Untuk versi perangkat aslinya, Masih dalam tahap riset.
 
 ## Topologi
+![alt text](https://github.com/zufardhiyaulhaq/OpenDayLight/blob/master/Images/NETCONF_Topology1.png)
 
+## Konfigurasi pada OpenDayLight
 
+- Jalankan OpenDayLight
+
+```
+./bin/karaf
+```
+
+- Install Feature OpenDayLight
+
+```
+feature:install odl-netconf-topology odl-restconf
+```
+
+## Konfigurasi pada Perangkat
+
+- Jalankan Perangkat NETCONF dan lakukan instalasi wget dan maven (dalam hal ini menggunakan ubuntu).
+
+```
+$ apt-get install maven wget
+```
+
+- Unduh OpenDayLight NETCONF Testtool
+
+```
+$ wget https://nexus.opendaylight.org/content/repositories/public/org/opendaylight/netconf/netconf-testtool/1.1.4-Boron-SR4/netconf-testtool-1.1.4-Boron-SR4-executable.jar
+```
+
+- Jalankan NETCONF Testtool
+
+```
+java -jar netconf-testtool-1.1.4-Boron-SR4-executable.jar
+```
+
+## Tambahkan Perangkat didalam OpenDayLight dengan Menggunakan Postman
 
 OpenDayLight Virtual Tenant Network
 ===================================
