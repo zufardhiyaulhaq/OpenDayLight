@@ -243,10 +243,10 @@ NETCONF adalah protokol northbound pada SDN (Software Defined Network) yang berf
 
 Kita akan mensimulasikan NETCONF dengan sebuah NETCONF Testtool yang dibuat oleh OpenDayLight. Untuk versi perangkat aslinya, Masih dalam tahap riset.
 
-## Topologi
+### Topologi
 ![alt text](https://github.com/zufardhiyaulhaq/OpenDayLight/blob/master/Images/NETCONF-Topology-1.png)
 
-## Konfigurasi pada OpenDayLight
+### Konfigurasi pada OpenDayLight
 
 - Jalankan OpenDayLight
 
@@ -260,7 +260,7 @@ Kita akan mensimulasikan NETCONF dengan sebuah NETCONF Testtool yang dibuat oleh
 feature:install odl-netconf-topology odl-restconf
 ```
 
-## Konfigurasi pada Perangkat
+### Konfigurasi pada Perangkat
 
 - Jalankan Perangkat NETCONF dan lakukan instalasi wget dan maven (dalam hal ini menggunakan ubuntu).
 
@@ -280,7 +280,7 @@ $ wget https://nexus.opendaylight.org/content/repositories/public/org/opendaylig
 java -jar netconf-testtool-1.1.4-Boron-SR4-executable.jar
 ```
 
-## Tambahkan Perangkat didalam OpenDayLight dengan Menggunakan RESTCONF
+### Tambahkan Perangkat didalam OpenDayLight dengan Menggunakan RESTCONF
 
 Dengan menggunakan postman, akan lebih mudah memasukan perintah RESTCONF.
 - Type : PUT
@@ -299,6 +299,25 @@ netconf/node/**new-netconf-device**_
 </node>
 ```
 
+### Verifikasi
+
+Lakukan verifikasi apakah perangakt berhasil terhubung dengan OpenDayLight.
+
+Dengan menggunakan postman.
+- Type : GET
+- URL :_http://192.168.122.254:8181/restconf/operational/network-
+topology:network-topology/topology/topology-
+netconf/node/**new-netconf-device**_
+
+![alt test](https://github.com/zufardhiyaulhaq/OpenDayLight/blob/master/Images/NETCONF-POSTMAN-2.png)
+
+### Menghapus Perangkat NETCONF
+
+Dengan menggunakan postman.
+- Type : DELETE
+- URL : _http://192.168.122.254:8181/restconf/config/network-topology:network-topology/topology/topology-
+netconf/node/**new-netconf-device**_
+ 
 ![alt text](https://github.com/zufardhiyaulhaq/OpenDayLight/blob/master/Images/NETCONF-Postman-1.png)
 
 OpenDayLight Virtual Tenant Network
