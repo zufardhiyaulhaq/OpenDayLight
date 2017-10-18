@@ -328,7 +328,7 @@ diatas sebuah jaringan fisik yang asli.
 Virtual Tenant Network memisahkan antara jaringan virtual dan jaringan fisiknya, kita dapat mendesain sebuah jaringan virtual tanpa memperhatikan topologi jaringan fisik itu sendiri.
 
 ## Keuntungan
-1. Pemisahan jarinagn virtual dan fisik akan menyembunyikan kompleksnya jaringan fisik tersebut,
+1. Pemisahan jaringan virtual dan fisik akan menyembunyikan kompleksnya jaringan fisik tersebut,
 1. Managemen perangkat yang lebih baik,
 1. Memilimalisir kesalahan konfigurasi.
 
